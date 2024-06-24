@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/fotos-gratis/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+h2 {
+    font-size: 3em;
+    color: rgb(251, 255, 0);
+    text-align: center; 
+    margin-right: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center; 
+    margin-right: 5%; 
+}
+
+label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: block;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(251, 255, 0);
+    background: none;
+    outline: none;
+    color: white;
+}
+
+input[type="password"] {
+width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(251, 255, 0);
+    background: none;
+    outline: none;
+    color: white;
+}
+
+
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: rgb(251, 255, 0);
+    color: rgba(0, 0, 0, 0.9);
+    border: none;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(251, 255, 0);
+}
+
+h2, form {
+    margin-right: 0;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2, form, body {
+    animation: slideIn 2s ease forwards;
+}
+
+.logo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    width: 200px; 
+    height: auto;
+    animation: slideIn 2s ease forwards; 
+}

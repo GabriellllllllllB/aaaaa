@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    
+    <link rel="stylesheet" type="text/css" href="academia.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="c:\Users\gabri\Desktop\academia\Captura de tela 2024-06-20 202433.png">
+
+</head>
+<body> 
+    <h2>ACADEMIA BESERKER</h2>
+    <img src="c:\Users\gabri\Desktop\academia\Captura_de_tela_2024-06-17_214536-removebg-preview (1).png" alt="Logo" class="logo">
+    <form id="cadastroForm" onsubmit="handleSubmit(event)">
+        <label for="NomeAluno">Nome do Aluno:</label><br>
+        <input type="text" id="NomeAluno" name="NomeAluno" required style="font-family: 'Bebas Neue', sans-serif;"><br>
+  
+        <label for="CPF">CPF:</label>
+        <input type="text" id="CPF" name="CPF" required style="font-family: 'Bebas Neue', sans-serif;" maxlength="14" oninput="formatarCPF(this);"><br>  
+
+        <label for="Objetivo">Objetivo:</label><br>
+        <input type="text" id="Objetivo" name="Objetivo" required style="font-family: 'Bebas Neue', sans-serif;"><br>
+    
+        <input type="submit" value="Cadastrar">
+    </form>
+    <div id="mensagem"></div>
+    <script src="academia.js" defer></script>
+</body>
+</html>

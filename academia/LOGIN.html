@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="c:\Users\gabri\Desktop\academia\Captura de tela 2024-06-20 202433.png">
+    <script>
+        
+        function formatarCPF(campoCPF) {
+            campoCPF.value = campoCPF.value.replace(/\D/g, '');
+            campoCPF.value = campoCPF.value.replace(/(\d{3})(\d)/, '$1.$2');
+            campoCPF.value = campoCPF.value.replace(/(\d{3})(\d)/, '$1.$2'); 
+            campoCPF.value = campoCPF.value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        }
+    </script>
+
+
+</head> 
+<body> 
+    <h2>LOGIN</h2>
+    <img src="c:\Users\gabri\Desktop\academia\Captura_de_tela_2024-06-17_214536-removebg-preview (1).png" alt="Logo" class="logo">
+    <form action="o.php" method="post">
+        <label for="CPF">Nome:</label>
+        <input type="text" id="CPF" name="CPF" required style="font-family: 'Bebas Neue', sans-serif;" maxlength="14" oninput="formatarCPF(this);"><br>  
+
+  
+        <label for="SENHA">SENHA:</label>
+        <input type="password" id="password" name="SENHA" required style="font-family: 'Bebas Neue', sans-serif;"><br>  
+      
+        <input type="submit" value="ENTRAR">
+    </form>
+</body>
+</html>

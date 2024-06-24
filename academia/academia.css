@@ -1,0 +1,110 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://uploaddeimagens.com.br/images/004/802/391/full/360_F_350818949_lJTfzSTDr79e9Kn55PUVZjN19ct20uGc__1___1_-removebg-preview_%281%29_%281%29_%281%29.png?1718930187");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white; /* Definir a cor padrão do texto */
+}
+
+h2 {
+    font-size: 3em;
+    color: rgb(251, 255, 0);
+    text-align: left;
+    margin-right: 45%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 56%;
+}
+
+label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: block;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(251, 255, 0);
+    background: none;
+    outline: none;
+    color: white;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: rgb(251, 255, 0);
+    color: rgba(0, 0, 0, 0.9);
+    border: none;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 45%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(251, 255, 0);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2, form, body {
+    animation: slideIn 2s ease forwards;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+    animation: slideIn 2s ease forwards;
+}
+
+#mensagem {
+    color: yellow; 
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: slideIn 2s ease forwards;
+}
